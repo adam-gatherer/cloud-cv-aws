@@ -13,3 +13,11 @@ On the page a view counter. The JavaScript on the page calls on an AWS Lambda fu
 The diagram below shows how the various components interact with one another.
 
 ![alt text](./READMEimg/cloud-cv-challenge-architecture.gif)
+
+## To-Do
+
+- [ ] Learn some Terraform
+- [ ] Infrastructure as code via Terraform
+- [ ] Add some tests to the Python code
+- [ ] Update CV to be... y'know... a CV
+- [ ] Blog post about it
