@@ -12,7 +12,7 @@ On the page a view counter. The JavaScript on the page calls on an AWS Lambda fu
 
 The diagram below shows how the various components interact with one another.
 
-![alt text](./READMEimg/cloud-cv-challenge-architecture.gif)
+![diagram showing components interacting with one another](./READMEimg/cloud_cv_diagram.jpg)
 
 ## To-Do
 
