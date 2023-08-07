@@ -29,5 +29,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: 'eu-west-1'
     - name: 'Run invalidation script'
-      working-directory: ${{ github.workspace}}/.github/
+      run: pwd
+      working-directory: ${{ github.workspace}}/
+      run: pwd
       run: bash ./invalidate_cache.sh
