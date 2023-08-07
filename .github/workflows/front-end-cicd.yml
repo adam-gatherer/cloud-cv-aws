@@ -30,3 +30,4 @@ jobs:
         aws-region: 'eu-west-1'
     - name: 'Run invalidation script'
       working-directory: ${{ github.workspace}}/
+      run: pwd
