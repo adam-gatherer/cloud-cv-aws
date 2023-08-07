@@ -27,11 +27,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Configure AWS Credentials
-    - uses: aws-actions/configure-aws-credentials@v2
-    - uses: actions/checkout@master
+      uses: aws-actions/configure-aws-credentials@v2
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: 'eu-west-1'
-      working-directory: ${{ github.workspace}}/
-      run: bash ${{ github.workspace}}/invalidate_cache.sh
+    - name: 'Bash script'
+    - uses: actions/checkout@master
+    - run: bash ${{ github.workspace}}/invalidate_cache.sh
