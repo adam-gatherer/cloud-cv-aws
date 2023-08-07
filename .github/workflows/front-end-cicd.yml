@@ -33,5 +33,5 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: 'eu-west-1'
     - name: 'Bash script'
-    - uses: actions/checkout@master
+      uses: actions/checkout@master
     - run: bash ${{ github.workspace}}/invalidate_cache.sh
