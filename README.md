@@ -1,6 +1,8 @@
 # Cloud Resume Challenge - AWS/CV Edition
 
-![](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white) ![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white) ![](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white) ![](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white) ![](https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white)
+![](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white) ![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white) ![](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white) ![](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white) ![](https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+
+![GitHub CI](https://github.com/adam-gatherer/cloud-cv-aws/actions/workflows/front-end-cicd.yml/badge.svg)
 
 ## About
 This repository contains the files used for my CV website, [cv.gatherer.tech](https://cv.gatherer.tech/). It was built following the framework laid out in the [Cloud Resume Challenge](https://cloudresumechallenge.dev).
@@ -17,8 +19,13 @@ The diagram below shows how the various components interact with one another.
 
 ![diagram showing components interacting with one another](./READMEimg/cloud_cv_diagram.jpg)
 
+## Automation
+
+After the aforementioned GitHub Action syncs the contents of the site/ folder to the S3 bucket, it runs an invalidation on the CloudFront cache by means of a bash script with AWS CLI commands. The credentials are stored as GitHub environment variables to prevent hard-coding access keys (a bad move if ever I saw one).
+
 ## To-Do
 
+- [ ] Change AWS CLI command permissions to use least privilege model
 - [ ] Learn some Terraform
 - [ ] Infrastructure as code via Terraform
 - [ ] Add some tests to the Python code
