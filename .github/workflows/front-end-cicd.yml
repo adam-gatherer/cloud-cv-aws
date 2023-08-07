@@ -25,9 +25,9 @@ jobs:
     - uses: ItsKarma/aws-cli@v1.70.0
     - uses: actions/checkout@master
     - name: script
-    run: PATH/invalidate_cache.sh
-    shell: bash
-    env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      AWS_DEFAULT_REGION: "us-east-1"
+      run: PATH/invalidate_cache.sh
+      shell: bash
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_DEFAULT_REGION: "us-east-1"
