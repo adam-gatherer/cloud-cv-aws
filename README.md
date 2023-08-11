@@ -21,11 +21,11 @@ The diagram below shows how the various components interact with one another.
 
 ## Automation
 
-After the aforementioned GitHub Action syncs the contents of the site/ folder to the S3 bucket, it runs an invalidation on the CloudFront cache by means of a bash script with AWS CLI commands. The credentials are stored as GitHub environment variables to prevent hard-coding access keys (a bad move if ever I saw one).
+After the aforementioned GitHub Action syncs the contents of the site/ folder to the S3 bucket, it runs an invalidation on the CloudFront cache by means of a bash script with AWS CLI commands. Instead of having the CloudFront Distribution ID mentioned in the code, I have the bash script query AWS and return all distributions, match the distribution with the project name via JQ, then extract the distribution ID from the JSON. The credentials are stored as GitHub environment variables to prevent hard-coding access keys (a bad move if ever I saw one). Said access keys correlate to an account with limited permissions that can only perform the required actions on the S3 bucket and CloudFront Distribution.
 
 ## To-Do
 
-- [ ] Change AWS CLI command permissions to use least privilege model
+- [x] Change AWS CLI command permissions to use least privilege model
 - [ ] Learn some Terraform
 - [ ] Infrastructure as code via Terraform
 - [ ] Add some tests to the Python code
