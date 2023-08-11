@@ -31,4 +31,4 @@ jobs:
         aws-region: 'eu-west-1'
     - name: 'Bash script'
       uses: actions/checkout@master
-    - run: bash ${{ github.workspace}}/invalidate_cache.sh
+    - run: bash ${{ github.workspace}}/invalidate_distribution.sh
