@@ -13,7 +13,7 @@ do
             --paths "/index.html" "/styles.css" "/img/*" \
             --no-cli-pager
         echo "Invalidation created."
-        exit 1
+        exit 0
     else
         echo "Distribution not found!"
         exit 1
