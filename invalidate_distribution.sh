@@ -13,6 +13,7 @@ do
             --paths "/index.html" "/styles.css" "/img/*" \
             --no-cli-pager
         echo "Invalidation created."
+        rm jqfile
         exit 0
     else
         echo "Distribution not found!"
