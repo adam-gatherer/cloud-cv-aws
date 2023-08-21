@@ -10,7 +10,7 @@ do
         distributionId=$( cat jqfile | jq -r '.DistributionList.Items['$c'].Id')
         aws cloudfront create-invalidation \
             --distribution-id "$distributionId" \
-            --paths "/index.html" "/styles.css" "/img/*" \
+            --paths "/index.html" "/style.css" "/img/*" \
             --no-cli-pager
         echo "Invalidation created."
         rm jqfile
