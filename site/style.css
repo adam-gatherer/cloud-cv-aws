@@ -32,9 +32,20 @@ main {
 h1 {
   font-size: 3rem;
 }
+
 h2 {
   font-weight: normal;
+  font-size: 2.5rem;
 }
+
+h3 {
+	font-size: 1.25rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
 
 p {
   margin: 1.5rem 0;
@@ -49,7 +60,7 @@ p {
 
 .banner:hover {
   color: var(--link);
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 a {
@@ -63,18 +74,45 @@ a:hover {
 }
 
 .pagetitle {
-	color: var(--primary);
-	text-decoration: none;
+        color: var(--primary);
+        text-decoration: none;
 }
 
 .pagetitle:hover {
-	color: var(--link);
+        color: var(--link);
 }
 
 ul {
-  font-size: 1.25rem;
+  font-size: 1rem;
   list-style: none;
   padding: 0;
+}
+
+.ul1 {
+	line-height: 1.5rem;
+	font-size: 1rem;
+	list-style: none;
+	margin-left: 1.2rem;
+	padding: 0;
+}
+
+.ul2 {
+	line-height: 1.5rem;
+	font-size: 1rem;
+	list-style-type: "- ";
+	margin-left: 2.7rem;
+	padding: 0;
+}
+
+.ul3 {
+	font-size: 1rem;
+	list-style-type: "•";
+	margin-left: 1.2rem;
+	padding: 0;
+}
+
+.li2{
+	line-height: 1.2rem;
 }
 
 pre {
@@ -89,13 +127,12 @@ pre {
 }
 
 .centred {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 .pixelated {
-	-ms-interpolation-mode: nearest-neighbor;
-	image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor;
+        image-rendering: pixelated;
 }
-
