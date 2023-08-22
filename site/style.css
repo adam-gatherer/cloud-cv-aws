@@ -20,7 +20,8 @@ body {
   height: calc(100% - 3rem);
   padding: 1.5rem 1rem;
   color: var(--secondary);
-  font: 1rem/2 'Courier New', monospace;
+  font: 1rem/2 'Roboto Mono', monospace;
+  font-weight: 200;
 }
 
 main {
@@ -29,21 +30,35 @@ main {
   max-width: 60rem;
 }
 
+.cvtitle {
+  font-size: 3rem;
+  font-family: 'Victor Mono';
+}
+
+
 h1 {
   font-size: 3rem;
+  font-family: 'Victor Mono';
+}
+
+.sectiontitle {
+  color: var(--primary);
 }
 
 h2 {
   font-weight: normal;
   font-size: 2.5rem;
+  font-family: 'Victor Mono';
 }
 
 h3 {
 	font-size: 1.25rem;
+	font-family: 'Victor Mono';
 }
 
-h4 {
-	font-size: 1rem;
+.subtitle {
+	font-size: 1.1rem;
+	font-weight: bold;
 }
 
 
@@ -66,10 +81,20 @@ p {
 a {
   color: var(--primary);
   text-decoration: underline 0.1rem;
+  font-weight: bold;
   text-underline-offset: 10%;
 }
 a:hover {
   color: var(--link);
+  text-decoration: none;
+}
+
+.lightlink {
+  font-weight: normal;
+}
+
+.linktotop {
+  font-weight: normal;
   text-decoration: none;
 }
 
@@ -89,26 +114,25 @@ ul {
 }
 
 .ul1 {
-	line-height: 1.5rem;
+	line-height: 1.7rem;
 	font-size: 1rem;
 	list-style: none;
-	margin-left: 1.2rem;
+	margin-left: 1rem;
 	padding: 0;
+	font: 'Roboto Mono', monospace;
 }
 
 .ul2 {
-	line-height: 1.5rem;
+	line-height: 1.75rem;
 	font-size: 1rem;
-	list-style-type: "- ";
-	margin-left: 2.7rem;
+	list-style-type: square;
+	margin-left: 1rem;
 	padding: 0;
+	font: 'Roboto Mono', monospace;
 }
 
-.ul3 {
-	font-size: 1rem;
-	list-style-type: "•";
-	margin-left: 1.2rem;
-	padding: 0;
+.contentsList {
+	line-height: 1.5rem;
 }
 
 .li2{
