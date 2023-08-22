@@ -29,5 +29,5 @@ After the aforementioned GitHub Action syncs the contents of the site/ folder to
 - [ ] Learn some Terraform
 - [ ] Infrastructure as code via Terraform
 - [ ] Add some tests to the Python code
-- [ ] Update CV to be... y'know... a CV
+- [x] Update CV to be... y'know... a CV
 - [ ] Blog post about it
