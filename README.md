@@ -26,7 +26,7 @@ After the aforementioned GitHub Action syncs the contents of the site/ folder to
 ## To-Do
 
 - [x] Change AWS CLI command permissions to use least privilege model
-- [ ] Learn some Terraform
+- [x] Learn some Terraform
 - [ ] Infrastructure as code via Terraform
 - [ ] Add some tests to the Python code
 - [x] Update CV to be... y'know... a CV
