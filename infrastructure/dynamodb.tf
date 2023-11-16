@@ -25,3 +25,14 @@ resource "aws_dynamodb_table" "cloud-cv-tf" {
     }
 
 }
+
+resource "aws_dynamodb_table_item" "clouc-cv-tf" {
+  table_name = aws_dynamodb_table.cloud-cv-tf.name
+  hash_key = aws_dynamodb_table.cloud-cv-tf.hash_key
+
+  item = << ITEM
+  {
+    "id": {"S": "1"},
+    "ViewCount": {"N": "0"}
+  }
+}
