@@ -1,7 +1,7 @@
 resource "aws_lambda_function" "cloud-cv-tf" {
     filename            = data.archive_file.zip.output_path
     source_code_hash    = data.archive_file.zip.output_base64sha256
-    function_name       = "lambda_function_tf"
+    function_name       = "lambda-cloud-cv-tf"
     role                = aws_iam_role.iam_role_for_cloud_cv_tf.arn
     handler             = "func.handler"
     runtime             = "python3.8" 

@@ -1,5 +1,5 @@
 resource "aws_dynamodb_table" "cloud-cv-tf" {
-  name = "cloud-cv-tf"
+  name = "db-cloud-cv-tf"
   billing_mode = "PROVISIONED"
   read_capacity = 1
   write_capacity = 1
@@ -7,7 +7,7 @@ resource "aws_dynamodb_table" "cloud-cv-tf" {
 
   attribute {
     name = "id"
-    type = "s"
+    type = "S"
   }
 
   attribute {
