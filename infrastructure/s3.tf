@@ -4,10 +4,6 @@ resource "aws_s3_bucket" "cloud-cv-tf" {
     Name = "s3-cloud-cv-tf"
   }
 
-  cors_rule {
-    
-  }
-
 }
 
 
