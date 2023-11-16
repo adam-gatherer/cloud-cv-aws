@@ -22,7 +22,7 @@ resource "aws_iam_policy" "iam_policy_for_cloud_cv_tf" {
   path        = "/"
   description = "AWS IAM policy for managing the cloud cv project role"
   policy = jsonencode({
-      "Version" : "2012-10-17"
+      "Version" : "2012-10-17",
       "Statement" : [
         {
           "Action" : [
@@ -39,7 +39,7 @@ resource "aws_iam_policy" "iam_policy_for_cloud_cv_tf" {
             "dynamodb:UpdateItem",
             "dynamodb:GetItem"
           ],
-          "Resrouce" : "arn:aws:dynamodb:*:*:table/cloud-cv-tf"
+          "Resource" : "arn:aws:dynamodb:*:*:table/cloud-cv-tf"
         }
       ]
     })
