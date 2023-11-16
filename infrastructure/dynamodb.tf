@@ -10,11 +10,6 @@ resource "aws_dynamodb_table" "cloud-cv-tf" {
     type = "S"
   }
 
-  attribute {
-    name = "ViewCount"
-    type = "N"
-  }
-
   ttl {
     attribute_name = "TimetoExist"
     enabled = false
@@ -30,9 +25,10 @@ resource "aws_dynamodb_table_item" "clouc-cv-tf" {
   table_name = aws_dynamodb_table.cloud-cv-tf.name
   hash_key = aws_dynamodb_table.cloud-cv-tf.hash_key
 
-  item = << ITEM
+  item = <<ITEM
   {
     "id": {"S": "1"},
     "ViewCount": {"N": "0"}
   }
+  ITEM
 }
