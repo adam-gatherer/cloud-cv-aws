@@ -1,5 +1,5 @@
 resource "aws_dynamodb_table" "cloud-cv-tf" {
-  name = "CloudCVtf"
+  name = "cloud-cv-tf"
   billing_mode = "PROVISIONED"
   read_capacity = 1
   write_capacity = 1
