@@ -34,5 +34,5 @@ resource "aws_acm_certificate_validation" "cloud-cv-tf" {
   # Using the us-east-1 provider
   provider = aws.acm_provider
   certificate_arn = aws_acm_certificate.cloud-cv-tf.arn
-  validation_record_fqdns = [for record in aws_route53_records.dns_validation : record.fqdn]
+  validation_record_fqdns = [for record in aws_route53_record.dns_validation : record.fqdn]
   }

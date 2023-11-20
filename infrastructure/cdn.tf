@@ -1,5 +1,8 @@
 resource "aws_cloudfront_distribution" "cloud-cv-tf" {
   origin {
+    #
+    # WEBSITE ENDPOINT IS DEPRECEATED!
+    #
     domain_name = aws_s3_bucket.cloud-cv-tf.website_endpoint
     origin_id = "S3-${var.cv_bucket_name}"
 
