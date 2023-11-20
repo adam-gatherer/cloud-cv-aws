@@ -18,7 +18,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "cloud-cv-tf-state"
+    bucket = "adam-gatherer-cloud-cv-tf"
     region = "eu-west-1"
     key = "state/main"
   }
