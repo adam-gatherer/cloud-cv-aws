@@ -12,10 +12,12 @@ terraform {
 }
 
 provider "aws" {
-    region = "eu-west-1"
+  # Used for main bulk of services
+  region = "eu-west-1"
 }
 
 provider "aws" {
+  # Used as ACM only available on us-east-1
   alias = "acm_provider"
   region = "us-east-1"
 }
@@ -23,6 +25,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
+    # Stores tf state file in private bucket
     bucket = "adam-gatherer-cloud-cv-tf"
     region = "eu-west-1"
     key = "state/main"
