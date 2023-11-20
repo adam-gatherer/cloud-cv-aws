@@ -3,7 +3,6 @@ resource "random_string" "random" {
   special = false
   lower = true
   upper = false
-  numeric = true
 }
 
 resource "aws_s3_bucket" "cloud-cv-tf" {
