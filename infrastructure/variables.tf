@@ -14,6 +14,6 @@ variable "domain" {
 }
 
 variable "dns_zone_id" {
-  description = "Zone ID for cv.gatherer.tech"
+  description = "Zone ID for cv.gatherer.tech, unmanaged by tf as used by other projects."
   type = string
 }
