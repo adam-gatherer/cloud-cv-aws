@@ -7,7 +7,7 @@ resource "random_string" "random" {
 }
 
 resource "aws_s3_bucket" "cloud-cv-tf" {
-  bucket = "s3-cloud-cv-tf"
+  bucket = "${random_string.random.result}-${var.cv_bucket_name}"
   tags ={
     Name = "s3-cloud-cv-tf"
   }
