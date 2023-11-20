@@ -1,6 +1,6 @@
-resource "aws_cloudfront_distribution" "cloud-cv-adam-gatherer-tf" {
+resource "aws_cloudfront_distribution" "cloud-cv-tf" {
     origin {
-        domain_name = aws_s3_bucket.cloud-cv-adam-gatherer-tf.s3_website_endpoint
+        domain_name = aws_s3_bucket.cloud-cv-tf.s3_website_endpoint
         origin_id   = "OriginaName"
         custom_origin_config {
           
@@ -13,7 +13,7 @@ resource "aws_cloudfront_distribution" "cloud-cv-adam-gatherer-tf" {
     }
     viewer_certificate {
       
-      acm_certificate_arn   = aws_acm_certificate.cloud-cv-adam-gatherer-tf.acm_certificate_arn
+      acm_certificate_arn   = aws_acm_certificate.cloud-cv-tf.acm_certificate_arn
       ssl_support_method    = "sni-only"
     }
     enabled         = true
@@ -43,11 +43,11 @@ resource "aws_cloudfront_distribution" "cloud-cv-adam-gatherer-tf" {
     }
 }
 
-resource "aws_cloudfront_origin_access_identity" "cloud-cv-adam-gatherer-tf" {
+resource "aws_cloudfront_origin_access_identity" "cloud-cv-tf" {
   comment = "OAI for cv website"
 }
 
-resource "aws_acm_certificate" "cloud-cv-adam-gatherer-tf" {
+resource "aws_acm_certificate" "cloud-cv-tf" {
   domain_name               = "tf.cv.gatherer.tech"
   subject_alternative_names = ["*.tf.cv.gatherer.tech"]
   validation_method         = "DNS"
