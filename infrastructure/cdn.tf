@@ -46,12 +46,3 @@ resource "aws_cloudfront_distribution" "cloud-cv-tf" {
 resource "aws_cloudfront_origin_access_identity" "cloud-cv-tf" {
   comment = "OAI for cv website"
 }
-
-resource "aws_acm_certificate" "cloud-cv-tf" {
-  domain_name               = "tf.cv.gatherer.tech"
-  subject_alternative_names = ["*.tf.cv.gatherer.tech"]
-  validation_method         = "DNS"
-  lifecycle {
-    create_before_destroy = true
-    }
-}
