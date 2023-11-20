@@ -14,7 +14,7 @@ resource "aws_acm_certificate" "cloud-cv-tf" {
 
 resource "aws_route53_record" "dns_validation" {
    for_each = {
-       for dvo in aws_acm_certificate.blog.domain_validation_options : item.domain_name => {
+       for dvo in aws_acm_certificate.cloud-cv-tf.domain_validation_options : dvo.domain_name => {
        name   = dvo.resource_record_name
        record = dvo.resource_record_value
        type   = dvo.resource_record_type
