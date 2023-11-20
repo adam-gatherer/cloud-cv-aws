@@ -23,6 +23,11 @@ data "aws_iam_policy_document" "cloud-cv-tf" {
   }
 }
 
+resource "aws_s3_bucket_policy" "cloud-cv-tf" {
+  bucket = aws_s3_bucket.cloud-cv-tf.id
+  policy = data.aws_iam_policy_document.cloud-cv-tf
+}
+
 
 resource "aws_s3_bucket_website_configuration" "cloud-cv-tf" {
   bucket = aws_s3_bucket.cloud-cv-tf.bucket
