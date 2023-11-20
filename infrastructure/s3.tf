@@ -28,7 +28,7 @@ data "aws_iam_policy_document" "cloud-cv-tf" {
 resource "aws_s3_bucket_policy" "cloud-cv-tf" {
   # Applies the policy to the bucket
   bucket = aws_s3_bucket.cloud-cv-tf.id
-  policy = data.aws_iam_policy_document.cloud-cv-tf
+  policy = data.aws_iam_policy_document.cloud-cv-tf.json
 }
 
 
