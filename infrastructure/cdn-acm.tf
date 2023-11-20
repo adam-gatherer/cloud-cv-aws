@@ -1,6 +1,6 @@
 resource "aws_cloudfront_distribution" "cloud-cv-tf" {
     origin {
-        domain_name = aws_s3_bucket.cloud-cv-tf.s3_website_endpoint
+        domain_name = aws_s3_bucket_website_configuration.aws_cloudfront_distribution.
         origin_id   = "OriginaName"
         custom_origin_config {
           
