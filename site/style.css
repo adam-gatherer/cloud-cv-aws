@@ -162,3 +162,37 @@ pre {
         -ms-interpolation-mode: nearest-neighbor;
         image-rendering: pixelated;
 }
+
+.collapsible {
+  margin-bottom: 1.5rem;
+}
+
+.collapsible-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: baseline;
+  cursor: pointer;
+}
+
+.collapsible-header h3 {
+  margin-right: 0.5rem;
+}
+
+.collapsible-header::before {
+  content: '▾';
+  margin-right: 0.5rem;
+  color: var(--primary);
+}
+
+.collapsed > .collapsible-header::before {
+  content: '▸';
+}
+
+.collapsible-content {
+  margin-top: 0.5rem;
+}
+
+.collapsed > .collapsible-content {
+  display: none;
+}
