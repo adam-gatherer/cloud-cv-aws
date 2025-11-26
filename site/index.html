@@ -28,16 +28,45 @@
       </p>
       <h2 id="about" class="sectiontitle">About</h2>
       <ul class="ul1">
-        <li>I'm a systems engineer from Scotland working in cloud engineering with a focus on AWS and automation. I'm currently happily employed but if you like what you see you can get in touch.
-		    Send me and <a href="mailto:&#097;&#100;&#097;&#109;&#064;&#103;&#097;&#116;&#104;&#101;&#114;&#101;&#114;&#046;&#116;&#101;&#099;&#104;">e-mail</a>
-		    or connect with me on <a href="https://&#119;&#119;&#119;&#046;&#108;&#105;&#110;&#107;&#101;&#100;&#105;&#110;&#046;&#099;&#111;&#109;/&#105;&#110;/&#097;&#100;&#097;&#109;&#103;&#097;&#116;&#104;&#101;&#114;&#101;&#114;" target="_blank">LinkedIn</a>.</li>
+        <li>
+          I'm a systems engineer specialising in automation, scheduling, and cloud technologies, with experience operating mission-critical workloads at scale in financial services. I focus on improving reliability, reducing manual effort, and building well-structured engineering tooling.
+          If you'd like to get in touch, you can send me an 
+          <a href="mailto:&#097;&#100;&#097;&#109;&#064;&#103;&#097;&#116;&#104;&#101;&#114;&#101;&#114;&#046;&#116;&#101;&#099;&#104;">e-mail</a>
+          or connect with me on 
+          <a href="https://&#119;&#119;&#119;&#046;&#108;&#105;&#110;&#107;&#101;&#100;&#105;&#110;&#046;&#099;&#111;&#109;/&#105;&#110;/&#097;&#100;&#097;&#109;&#103;&#097;&#116;&#104;&#101;&#114;&#101;&#114;" target="_blank">LinkedIn</a>.
+        </li>
         <p></p>
-        <li>This page is sat in an AWS S3 bucket and distributed by CloudFront. For more information on how this is running, see the <a href="https://github.com/adam-gatherer/cloud-cv-aws" target="_blank">GitHub repo</a>.</li>
+        <li>
+          This page is hosted using an AWS serverless architecture (S3 + CloudFront). You can view the full source code and deployment configuration in the 
+          <a href="https://github.com/adam-gatherer/cloud-cv-aws" target="_blank">GitHub repo</a>.
+        </li>
       </ul>
       <p>
       </p>
       <h2 id="work" class="sectiontitle">Work History</h2>
       <ul class="ul1">
+        <li>
+          <h3>Systems Engineer - Orchestration</h3>
+          <span><i>Tesco Bank, Aug '24 - Present</i></span>
+          <ul class="ul2">
+            <li>Operate and enhance the Autosys scheduling estate of 11,990 jobs in 2,702 boxes across SIT, PPE, and PROD, protecting mission-critical Category A banking services.</li>
+            <li>Led orchestration for the SAS infrastructure migration: updated and deployed 1,796 jobs in 535 boxes; developed new JIL; managed environment rollouts, shakedown testing, troubleshooting, cutover support, and decommissioning of legacy jobs. Acted as primary liaison with the SAS Upgrade project manager.</li>
+            <li>Investigate and resolve complex filewatcher and batch failures by analysing job chains, Perl/CTL scripts, and file dependencies using Autosys CLI, WCC, and local databases.</li>
+            <li>Develop Python tooling for job analysis, reporting, and automation:
+              <ul>
+                <li>Built data pipelines with pandas to prepare job metadata for ServiceNow knowledge articles, improving visibility of job ownership.</li>
+                <li>Enhanced orchestration team tools (workspace setup, deployment scripts), introducing PEP8 compliance, pylint, and Black; raised mean pylint scores from ~6.5-7.5 to 8.1-9.2.</li>
+                <li>Reduced Medium-Risk Snyk vulnerability flags from 62 to 11 by resolving unsafe pickling, SQL injection, and path traversal issues.</li>
+              </ul>
+            </li>
+            <li>Optimised Bash and Python scripts for mass job actions (job reports, JIL updates, batch investigations) and used SQLite/SQL queries for root cause analysis and reporting.</li>
+            <li>Perform Linux operations on Autosys and FTG hosts (including AWS-backed instances) to maintain file workflows, update .ctl files, create cron/Bash automation, and support batch troubleshooting.</li>
+            <li>Use GitHub Enterprise (JIL, Python, Perl, CTL), ServiceNow (change/incident/knowledge), Jira/Confluence (SAFe Agile), Snyk (code scanning), Jenkins/CloudBees (deployments), and Copilot (assisted development).</li>
+            <li>Work in a 17-person Orchestration squad (8 dev, 3 infra) within SAFe Agile; act as point-of-contact for SAS-related orchestration following handover from a retiring senior engineer and mentor newer staff.</li>
+            <li>Pursuing AWS Certified Developer - Associate for professional growth.</li>
+          </ul>
+        </li>
+        <p></p>
         <li>
           <h3>Server Engineer</h3>
           <span><i>NHS Lothian, Oct '22 - Aug '24</i></span>
@@ -126,6 +155,7 @@
         <li>
           <h3>Professional Certifications (<a href="https://www.credly.com/users/adam-gatherer/badges" target="_blank">Credly</a>)</h3>
           <ul class="ul2">
+            <li>SAFe® 6 Practitioner (SP)</li>
             <li>Microsoft Certified: Azure Fundamentals</li>
             <li>Microsoft Certified: Security, Compliance, and Identity Fundamentals</li>
             <li>Microsoft 365 Certified: Fundamentals</li>
@@ -152,11 +182,10 @@
       </p>
       <h2 id="download" class="sectiontitle">PDF Links</h2>
       <ul class="ul1" style="opacity:0.80">
-        <li>If you would like this page as a PDF you can download it using the links below. I have provided a print-friendly b&w version to save on ink costs.</li>
+        <li>If you would like this page as a PDF you can download it using the links below.</li>
         <p>
         </p>
-        <li><a href="https://github.com/adam-gatherer/cloud-cv-aws/blob/master/pdfs/AdamGathererCV.pdf?raw=true" target="_blank">AdamGathererCV.pdf</a></li>
-        <li><a href="https://github.com/adam-gatherer/cloud-cv-aws/blob/master/pdfs/AdamGathererCV(b%26w).pdf?raw=true" target="_blank">AdamGathererCV(B&W).pdf</a></li>
+        <li><a href="https://github.com/adam-gatherer/cloud-cv-aws/blob/master/pdfs/AdamGathererCV(b%26w).pdf?raw=true" target="_blank">AdamGathererCV.pdf</a></li>
         <p>
         </p>
         <li>
