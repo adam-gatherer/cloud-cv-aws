@@ -28,16 +28,46 @@
       </p>
       <h2 id="about" class="sectiontitle">About</h2>
       <ul class="ul1">
-        <li>I'm a systems engineer from Scotland working in cloud engineering with a focus on AWS and automation. I'm currently happily employed but if you like what you see you can get in touch.
-		    Send me and <a href="mailto:&#097;&#100;&#097;&#109;&#064;&#103;&#097;&#116;&#104;&#101;&#114;&#101;&#114;&#046;&#116;&#101;&#099;&#104;">e-mail</a>
-		    or connect with me on <a href="https://&#119;&#119;&#119;&#046;&#108;&#105;&#110;&#107;&#101;&#100;&#105;&#110;&#046;&#099;&#111;&#109;/&#105;&#110;/&#097;&#100;&#097;&#109;&#103;&#097;&#116;&#104;&#101;&#114;&#101;&#114;" target="_blank">LinkedIn</a>.</li>
+        <li>
+          I'm a systems engineer specialising in automation, scheduling, and cloud technologies, with experience operating mission-critical workloads at scale in financial services. I focus on improving reliability, reducing manual effort, and building well-structured engineering tooling.
+          If you'd like to get in touch, you can send me an 
+          <a href="mailto:&#097;&#100;&#097;&#109;&#064;&#103;&#097;&#116;&#104;&#101;&#114;&#101;&#114;&#046;&#116;&#101;&#099;&#104;">e-mail</a>
+          or connect with me on 
+          <a href="https://&#119;&#119;&#119;&#046;&#108;&#105;&#110;&#107;&#101;&#100;&#105;&#110;&#046;&#099;&#111;&#109;/&#105;&#110;/&#097;&#100;&#097;&#109;&#103;&#097;&#116;&#104;&#101;&#114;&#101;&#114;" target="_blank">LinkedIn</a>.
+        </li>
         <p></p>
-        <li>This page is sat in an AWS S3 bucket and distributed by CloudFront. For more information on how this is running, see the <a href="https://github.com/adam-gatherer/cloud-cv-aws" target="_blank">GitHub repo</a>.</li>
+        <li>
+          This page is hosted using an AWS serverless architecture (S3 + CloudFront). You can view the full source code and deployment configuration in the 
+          <a href="https://github.com/adam-gatherer/cloud-cv-aws" target="_blank">GitHub repo</a>.
+        </li>
       </ul>
       <p>
       </p>
       <h2 id="work" class="sectiontitle">Work History</h2>
       <ul class="ul1">
+        <li>
+          <h3>Systems Engineer - Orchestration</h3>
+          <span><i>Tesco Bank, Aug '24 - Present</i></span>
+          <ul class="ul2">
+            <li>Operate and enhance the Autosys scheduling estate of 11,990 jobs in 2,702 boxes across SIT, PPE, and PROD, protecting mission-critical Category A banking services.</li>
+            <li>Led orchestration for the SAS infrastructure migration: updated and deployed 1,796 jobs in 535 boxes; developed new JIL; managed environment rollouts, shakedown testing, troubleshooting, cutover support, and decommissioning of legacy jobs. Acted as primary liaison with the SAS Upgrade project manager.</li>
+            <li>Investigate and resolve complex filewatcher and batch failures by analysing job chains, Perl/CTL scripts, and file dependencies using Autosys CLI, WCC, and local databases.</li>
+            <li>Develop Python tooling for job analysis, reporting, and automation:
+              <ul class="ul2">
+                <li>Built data pipelines with pandas to prepare job metadata for ServiceNow knowledge articles, improving visibility of job ownership.</li>
+                <li>Enhanced orchestration team tools (workspace setup, deployment scripts), introducing PEP8 compliance, pylint, and Black; raised mean pylint scores from ~6.5-7.5 to 8.1-9.2.</li>
+                <li>Reduced Medium-Risk Snyk vulnerability flags from 62 to 11 by resolving unsafe pickling, SQL injection, and path traversal issues.</li>
+              </ul>
+            </li>
+            </li>
+            <li>Optimised Bash and Python scripts for mass job actions (job reports, JIL updates, batch investigations) and used SQLite/SQL queries for root cause analysis and reporting.</li>
+            <li>Perform Linux operations on Autosys and FTG hosts (including AWS-backed instances) to maintain file workflows, update .ctl files, create cron/Bash automation, and support batch troubleshooting.</li>
+            <li>Use GitHub Enterprise (JIL, Python, Perl, CTL), ServiceNow (change/incident/knowledge), Jira/Confluence (SAFe Agile), Snyk (code scanning), Jenkins/CloudBees (deployments), and Copilot (assisted development).</li>
+            <li>Work in a 17-person Orchestration squad (8 dev, 3 infra) within SAFe Agile; act as point-of-contact for SAS-related orchestration following handover from a retiring senior engineer and mentor newer staff.</li>
+            <li>Pursuing AWS Certified Developer - Associate for professional growth.</li>
+          </ul>
+        </li>
+        <p></p>
         <li>
           <h3>Server Engineer</h3>
           <span><i>NHS Lothian, Oct '22 - Aug '24</i></span>
@@ -55,31 +85,43 @@
         </li>
         <p>
         </p>
-        <li>
-          <h3>Systems & Infrastructure Technician (Student Experience)</h3>
-          <span><i>Edinburgh Napier University, June '21 - Oct '22</i></span>
-          <ul class="ul2">
-            <li>Packaged software apps in VMware for cloud-enabled classroom use (Cloudpaging Studio)</li>
-            <li>Analyzed and resolved virtualization and packaging issues with limited official documentation</li>
-            <li>Deployed new infrastructure within tight timelines for School of Computing's academic year start</li>
-            <li>Managed student volunteer team for lab upgrade initiatives</li>
-            <li>Automated software installation through scripting (PowerShell, Bash, Python)</li>
-            <li>Provided technical and non-technical support to staff and colleagues</li>
-          </ul>
+
+        <li class="collapsible collapsed">
+          <div class="collapsible-header">
+            <h3>Systems & Infrastructure Technician (Student Experience)</h3>
+            <span><i>Edinburgh Napier University, June '21 - Oct '22</i></span>
+          </div>
+          <div class="collapsible-content">
+            <ul class="ul2">
+              <li>Packaged software apps in VMware for cloud-enabled classroom use (Cloudpaging Studio)</li>
+              <li>Analyzed and resolved virtualization and packaging issues with limited official documentation</li>
+              <li>Deployed new infrastructure within tight timelines for School of Computing's academic year start</li>
+              <li>Managed student volunteer team for lab upgrade initiatives</li>
+              <li>Automated software installation through scripting (PowerShell, Bash, Python)</li>
+              <li>Provided technical and non-technical support to staff and colleagues</li>
+            </ul>
+          </div>
         </li>
+
         <p>
         </p>
-        <li>
-          <h3>Customer Service Advisor</h3>
-          <span><i>Centrica, Jan '18 - Aug '19</i></span>
-          <ul class="ul2">
-            <li>Investigated and analyzed financial records, providing transparent payment plans to customers</li>
-            <li>Produced technical reports for ticketing, complaints, and account management systems</li>
-            <li>Resolved and de-escalated customer complaints with professionalism</li>
-            <li>Automated daily tasks using Windows Task Scheduler</li>
-            <li>Remained composed under pressure in gas and electrical emergencies as a first response team member</li>
-          </ul>
+
+        <li class="collapsible collapsed">
+          <div class="collapsible-header">
+            <h3>Customer Service Advisor</h3>
+            <span><i>Centrica, Jan '18 - Aug '19</i></span>
+          </div>
+          <div class="collapsible-content">
+            <ul class="ul2">
+              <li>Investigated and analyzed financial records, providing transparent payment plans to customers</li>
+              <li>Produced technical reports for ticketing, complaints, and account management systems</li>
+              <li>Resolved and de-escalated customer complaints with professionalism</li>
+              <li>Automated daily tasks using Windows Task Scheduler</li>
+              <li>Remained composed under pressure in gas and electrical emergencies as a first response team member</li>
+            </ul>
+          </div>
         </li>
+
         <p>
         </p>
         <li>
@@ -90,29 +132,41 @@
       </p>
       <h2 id="education" class="sectiontitle">Education</h2>
       <ul class="ul1">
-        <li>
+
+      <li class="collapsible collapsed">
+        <div class="collapsible-header">
           <h3>BEng Computer Systems And Networks</h3>
           <span><i>Edinburgh Napier University, Sept '21 - July '23</i></span>
+        </div>
+        <div class="collapsible-content">
           <ul class="ul2">
-            <li>Degree awarded with distinction and winner of the university medal</li>
-            <li>Networked Services: Linux filesystem, command shell scripting, system configuration (CentOS); web server configuration analysis & implementation (Apache2); network and server security, firewall configuration</li>
-            <li>Pratical Networks 3: OSI & TCP/IP network models and addressing schemes (IPv4, IPv6); WAN technologies and design</li>
-            <li>Scripting for Cybersecurity and Networks: developed a <a href="https://github.com/adam-gatherer/packetanalyser" target="_blank">.pcap analysis script</a>; design and implementation of well-written and modular Python code; scripting for security, networking, digital forensics</li>
-            <li>Work Based Learning Module: worked in the IT industry for a year (Napier Uni, NHS Lothian); wrote critical reflection essays on technical, professional, and personal growth</li>
+            <li>Degree awarded with Distinction; awarded University Medal.</li>
+            <li>Networked Services: Linux filesystem, shell scripting, CentOS configuration, Apache2, firewall configuration, security.</li>
+            <li>Practical Networks 3: OSI & TCP/IP, IPv4/IPv6, WAN technologies and network design.</li>
+            <li>Scripting for Cybersecurity and Networks: built <a href="https://github.com/adam-gatherer/packetanalyser" target="_blank">Python packet analyser</a>, modular Python programming, scripting for forensics & networking.</li>
+            <li>Work Based Learning: industry placement (Napier + NHS Lothian), professional and technical development.</li>
           </ul>
-        </li>
+        </div>
+      </li>
+
         <p>
         </p>
-        <li>
+
+      <li class="collapsible collapsed">
+        <div class="collapsible-header">
           <h3>HND Computer Networking</h3>
           <span><i>Edinburgh College, Aug '19 - July '21</i></span>
+        </div>
+        <div class="collapsible-content">
           <ul class="ul2">
-            <li>Two year college diploma, <a href="https://www.gatherer.tech/projects/gradedunit/" target="_blank">A grade</a></li>
-            <li>Systems modules: <a href="https://www.gatherer.tech/projects/winservadmin/" target="_blank">Server Administration</a> (Windows Server 2019); Multi-User Operating Systems (Debian); Managing a Web Server (Apache, MariaDB, WordPress, PHP); Private Cloud Virtualisation (ESXi, VMware)</li>
-            <li>Networking modules: Switching, Routing, and Wireless Essentials; Enterprise Networking, Security, and Automation</li>
-            <li>Other modules: Team Working in Computing; Project Management for IT; Professionalism and Ethics in Computing</li>
+            <li>Two-year diploma, awarded A grade.</li>
+            <li>Systems modules: <a href="https://www.gatherer.tech/projects/winservadmin/" target="_blank">Windows Server</a>, Debian multi-user OS, Apache/MariaDB/WordPress/PHP, ESXi & VMware private cloud.</li>
+            <li>Networking modules: Switching, Routing & Wireless Essentials; Enterprise Networking, Security & Automation.</li>
+            <li>Additional modules: Team Working, Project Management, Professionalism & Ethics in Computing.</li>
           </ul>
-        </li>
+        </div>
+      </li>
+
         <p>
         </p>
         <li>
@@ -126,6 +180,7 @@
         <li>
           <h3>Professional Certifications (<a href="https://www.credly.com/users/adam-gatherer/badges" target="_blank">Credly</a>)</h3>
           <ul class="ul2">
+            <li>SAFe® 6 Practitioner (SP)</li>
             <li>Microsoft Certified: Azure Fundamentals</li>
             <li>Microsoft Certified: Security, Compliance, and Identity Fundamentals</li>
             <li>Microsoft 365 Certified: Fundamentals</li>
@@ -136,8 +191,8 @@
         <li>
           <h3>Personal Projects</a></h3>
           <ul class="ul2">
-            <li><a href="https://github.com/adam-gatherer/cloud-cv-aws" target="_blank">Cloud CV</a> - AWS cloud based serverless website with CI/CD; what you're looking at right now</li>
-            <li><a href="https://github.com/adam-gatherer/terraform-load-balancer" target="_blank">Terraform Load Balancer</a> - Terraform project to deply a load balancer on AWS</li>
+            <li><a href="https://github.com/adam-gatherer/cloud-cv-aws" target="_blank">Cloud CV</a> - AWS S3 + CloudFront serverless CV site with CI/CD; what you're looking at right now</li>
+            <li><a href="https://github.com/adam-gatherer/terraform-load-balancer" target="_blank">Terraform Load Balancer</a> - Terraform project to deploy a load balancer on AWS</li>
             <li><a href="https://github.com/adam-gatherer/tempercent" target="_blank">Tempercent</a> - Python based web app to show temperature as a percentage of the average (Flask, API calls, Poetry)</li>
             <li><a href="https://github.com/adam-gatherer/urlshortener" target="_blank">URL Shortener</a> - Python based web app to shorten URLs (FastAPI, Uvicorn, SQLAlchemy); project taken from RealPython.com</li>
           </ul>
@@ -152,11 +207,10 @@
       </p>
       <h2 id="download" class="sectiontitle">PDF Links</h2>
       <ul class="ul1" style="opacity:0.80">
-        <li>If you would like this page as a PDF you can download it using the links below. I have provided a print-friendly b&w version to save on ink costs.</li>
+        <li>If you would like this page as a PDF you can download it using the links below.</li>
         <p>
         </p>
-        <li><a href="https://github.com/adam-gatherer/cloud-cv-aws/blob/master/pdfs/AdamGathererCV.pdf?raw=true" target="_blank">AdamGathererCV.pdf</a></li>
-        <li><a href="https://github.com/adam-gatherer/cloud-cv-aws/blob/master/pdfs/AdamGathererCV(b%26w).pdf?raw=true" target="_blank">AdamGathererCV(B&W).pdf</a></li>
+        <li><a href="https://github.com/adam-gatherer/cloud-cv-aws/blob/master/pdfs/AdamGathererCV(b%26w).pdf?raw=true" target="_blank">AdamGathererCV.pdf</a></li>
         <p>
         </p>
         <li>

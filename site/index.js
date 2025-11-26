@@ -2,9 +2,23 @@
 
 const counter = document.querySelector(".counter-number"); //select the element from index.html
 async function updateCounter() { //function that does a fetch request
-	let response = await fetch ("https://bujk7hizyolll7qscxgtjcodpy0qzhzx.lambda-url.eu-west-1.on.aws/");
-	let data = await response.json(); //stores response as variable called "data"
-	counter.innerHTML = `Page views: ${data}`; //updates counter in HTML file to use data variable
+  let response = await fetch("https://bujk7hizyolll7qscxgtjcodpy0qzhzx.lambda-url.eu-west-1.on.aws/");
+  let data = await response.json(); //stores response as variable called "data"
+  counter.innerHTML = `Page views: ${data}`; //updates counter in HTML file to use data variable
+}
+
+function initCollapsibles() {
+  const sections = document.querySelectorAll(".collapsible");
+
+  sections.forEach((section) => {
+    const header = section.querySelector(".collapsible-header");
+    if (!header) return;
+
+    header.addEventListener("click", () => {
+      section.classList.toggle("collapsed");
+    });
+  });
 }
 
 updateCounter();
+initCollapsibles();
