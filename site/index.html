@@ -1,298 +1,168 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Adam Gatherer — systems engineer with Python automation, production infrastructure experience and AWS serverless projects.">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://cv.gatherer.tech/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Victor+Mono:wght@500&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&amp;family=Victor+Mono:wght@500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>cv@gatherer.tech</title>
+  <link rel="stylesheet" href="cv.css">
+  <script src="index.js" defer></script>
+  <title>Adam Gatherer | Systems Engineer — cv.gatherer.tech</title>
 </head>
-
 <body>
-  <h1><a href="https://www.gatherer.tech" class="pagetitle" id="top">gatherer.tech</a></h1>
-  <main>
+  <a class="skip-link" href="#main">Skip to CV content</a>
+  <header><h1><a class="pagetitle" href="https://www.gatherer.tech" id="top">gatherer:~#</a></h1></header>
+  <main id="main" tabindex="-1">
     <h2>//CV</h2>
-    <h3>Adam Gatherer - Data Engineer | Cloud & Automation</h3>
-    <div class="counter-number"><i>Couldn't fetch views.</i></div>
-    <p>
-    </p>
-    <ul class="contentsList">
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work History</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#download">PDF Download</a></li>
-    </ul>
-    <p>
-    </p>
-    <h2 id="about" class="sectiontitle">About</h2>
-    <ul class="ul1">
-      <li>
-        I'm a data engineer specialising in automation, scheduling, and cloud technologies, with experience operating
-        mission-critical workloads at scale in financial services. I focus on improving reliability, reducing manual
-        effort, and building well-structured engineering tooling.
-        If you'd like to get in touch, you can send me an
-        <a
-          href="mailto:&#097;&#100;&#097;&#109;&#064;&#103;&#097;&#116;&#104;&#101;&#114;&#101;&#114;&#046;&#116;&#101;&#099;&#104;">e-mail</a>
-        or connect with me on
-        <a href="https://&#119;&#119;&#119;&#046;&#108;&#105;&#110;&#107;&#101;&#100;&#105;&#110;&#046;&#099;&#111;&#109;/&#105;&#110;/&#097;&#100;&#097;&#109;&#103;&#097;&#116;&#104;&#101;&#114;&#101;&#114;"
-          target="_blank">LinkedIn</a>.
-      </li>
-      <p></p>
-      <li>
-        This page is hosted using an AWS serverless architecture (S3 + CloudFront). You can view the full source code
-        and deployment configuration in the
-        <a href="https://github.com/adam-gatherer/cloud-cv-aws" target="_blank">GitHub repo</a>.
-      </li>
-    </ul>
-    <p>
-    </p>
-
-    <!-- WORK HISTORY -->
-    <h2 id="work" class="sectiontitle">Work History</h2>
-    <ul class="ul1">
-      <li>
-        <h3>Data Engineer - Orchestration</h3>
-        <span><i>Barclays PLC (formerly Tesco Bank), Aug '24 - Present</i></span>
-        <ul class="ul2">
-          <li>Operate and enhance the Autosys scheduling estate of 11,990 jobs in 2,702 boxes across SIT, PPE, and PROD,
-            protecting mission-critical Category A banking services.</li>
-          <li>Led orchestration for the SAS infrastructure migration: updated and deployed 1,796 jobs in 535 boxes;
-            developed new JIL; managed environment rollouts, shakedown testing, troubleshooting, cutover support, and
-            decommissioning of legacy jobs. Acted as primary liaison with the SAS Upgrade project manager.</li>
-          <li>Investigate and resolve complex filewatcher and batch failures by analysing job chains, Perl/CTL scripts,
-            and file dependencies using Autosys CLI, WCC, and local databases.</li>
-          <li>Develop Python tooling for job analysis, reporting, and automation:
-            <ul class="ul2">
-              <li>Built data pipelines with pandas to prepare job metadata for ServiceNow knowledge articles, improving
-                visibility of job ownership.</li>
-              <li>Enhanced orchestration team tools (workspace setup, deployment scripts), introducing PEP8 compliance,
-                pylint, and Black; raised mean pylint scores from ~6.5-7.5 to 8.1-9.2.</li>
-              <li>Reduced Medium-Risk Snyk vulnerability flags from 62 to 11 by resolving unsafe pickling, SQL
-                injection, and path traversal issues.</li>
-            </ul>
-          </li>
-      </li>
-      <li>Optimised Bash and Python scripts for mass job actions (job reports, JIL updates, batch investigations) and
-        used SQLite/SQL queries for root cause analysis and reporting.</li>
-      <li>Perform Linux operations on Autosys and FTG hosts (including AWS-backed instances) to maintain file workflows,
-        update .ctl files, create cron/Bash automation, and support batch troubleshooting.</li>
-      <li>Use GitHub Enterprise (JIL, Python, Perl, CTL), ServiceNow (change/incident/knowledge), Jira/Confluence (SAFe
-        Agile), Snyk (code scanning), Jenkins/CloudBees (deployments), and Copilot (assisted development).</li>
-      <li>Work in a 17-person Orchestration squad (8 dev, 3 infra) within SAFe Agile; act as point-of-contact for
-        SAS-related orchestration following handover from a retiring senior engineer and mentor newer staff.</li>
-      <li>Pursuing AWS Certified Developer - Associate for professional growth.</li>
-    </ul>
-    </li>
-    <p></p>
-    <li class="collapsible collapsed">
-      <div class="collapsible-header">
-        <h3>Server Engineer</h3>
-        <span><i>NHS Lothian, Oct '22 - Aug '24</i></span>
-      </div>
-      <div class="collapsible-content">
-        <ul class="ul2">
-          <li>Created, managed, and maintained network directories for users across the entirety of NHS Lothian whilst
-            accommodating their unique needs for access control, data type, storage space, and expected growth</li>
-          <li>Deployed and managed virtualised infrastructure with VMware vSphere</li>
-          <li>Extensive use of PowerShell scripting to automate administration tasks</li>
-          <li>Administered SQL databases for third party applications on Windows Server</li>
-          <li>Developed and executed data migration plans for teams with large network directories as part of storage
-            server management</li>
-          <li>Working with the Digital Operations team to provide high quality service to over 30,000 users and over 600
-            servers</li>
-          <li>Monitoring and managing server storage via Nagios to quickly respond to shortages</li>
-          <li>Automated the installation process of the Nagios client through PowerShell scripting to reduce server
-            build times</li>
-          <li>Enabled third-party software installations through controlled access to servers</li>
-        </ul>
-      </div>
-    </li>
-    <p>
-    </p>
-
-    <li class="collapsible collapsed">
-      <div class="collapsible-header">
-        <h3>Systems & Infrastructure Technician (Student Experience)</h3>
-        <span><i>Edinburgh Napier University, June '21 - Oct '22</i></span>
-      </div>
-      <div class="collapsible-content">
-        <ul class="ul2">
-          <li>Packaged software apps in VMware for cloud-enabled classroom use (Cloudpaging Studio)</li>
-          <li>Analyzed and resolved virtualization and packaging issues with limited official documentation</li>
-          <li>Deployed new infrastructure within tight timelines for School of Computing's academic year start</li>
-          <li>Managed student volunteer team for lab upgrade initiatives</li>
-          <li>Automated software installation through scripting (PowerShell, Bash, Python)</li>
-          <li>Provided technical and non-technical support to staff and colleagues</li>
-        </ul>
-      </div>
-    </li>
-
-    <p>
-    </p>
-
-    <li class="collapsible collapsed">
-      <div class="collapsible-header">
-        <h3>Customer Service Advisor</h3>
-        <span><i>Centrica, Jan '18 - Aug '19</i></span>
-      </div>
-      <div class="collapsible-content">
-        <ul class="ul2">
-          <li>Investigated and analyzed financial records, providing transparent payment plans to customers</li>
-          <li>Produced technical reports for ticketing, complaints, and account management systems</li>
-          <li>Resolved and de-escalated customer complaints with professionalism</li>
-          <li>Automated daily tasks using Windows Task Scheduler</li>
-          <li>Remained composed under pressure in gas and electrical emergencies as a first response team member</li>
-        </ul>
-      </div>
-    </li>
-
-    <p>
-    </p>
-    <li>
-      <a href="#top" style="font-size:0.8rem"><i>^top</i></a>
-    </li>
-    </ul>
-    <!-- WORK HISTORY END -->
-
-    <p>
-    </p>
-
-    <!-- PROJECTS -->
-    <h2 id="projects" class="sectiontitle">Projects</h2>
-    <ul class="ul1">
-      <li>
-        <h3>Personal Projects</a></h3>
-        <ul class="ul2">
-          <li><a href="https://github.com/adam-gatherer/JIL_Estate_Sync" target="_blank">JIL Estate Sync</a> -
-            Proof-of-concept AWS event-driven pipeline to automate Autosys JIL exports to GitHub, improving reliability,
-            auditability, and version control of scheduling configurations.</li>
-          <li><a href="https://github.com/adam-gatherer/stormwatcher" target="_blank">stormwatcher</a> - AWS serverless
-            ETL pipeline (Lambda, S3, DynamoDB, EventBridge, SNS) built with Terraform for weather ingestion and risk
-            scoring.</li>
-          <li><a href="https://github.com/adam-gatherer/cloud-cv-aws" target="_blank">Cloud CV</a> - AWS S3 + CloudFront
-            serverless CV site with CI/CD; what you're looking at right now</li>
-          <li><a href="https://github.com/adam-gatherer/terraform-load-balancer" target="_blank">Terraform Load
-              Balancer</a> - Terraform project to deploy a load balancer on AWS</li>
-          <li><a href="https://github.com/adam-gatherer/tempercent" target="_blank">Tempercent</a> - Python based web
-            app to show temperature as a percentage of the average (Flask, API calls, Poetry)</li>
-          <li><a href="https://github.com/adam-gatherer/urlshortener" target="_blank">URL Shortener</a> - Python based
-            web app to shorten URLs (FastAPI, Uvicorn, SQLAlchemy); project taken from RealPython.com</li>
-        </ul>
-      </li>
-      <li>
-        <a href="#top" style="font-size:0.8rem"><i>^top</i></a>
-      </li>
-    </ul>
-    <!-- PROJECTS END -->
-
-    <p>
-    </p>
-
-    <!-- CERTS -->
-    <h2 id="certifications" class="sectiontitle">Certifications</h2>
-    <ul class="ul1">
-      <li>
-        <h3>Professional Certifications (<a href="https://www.credly.com/users/adam-gatherer/badges"
-            target="_blank">Credly</a>)</h3>
-        <ul class="ul2">
-          <li>SAFe® 6 Practitioner (SP)</li>
-          <li>Microsoft Certified: Azure Fundamentals</li>
-          <li>Microsoft Certified: Security, Compliance, and Identity Fundamentals</li>
-          <li>Microsoft 365 Certified: Fundamentals</li>
-        </ul>
-      </li>
-      <li>
-        <a href="#top" style="font-size:0.8rem"><i>^top</i></a>
-      </li>
-    </ul>
-    <!-- CERTS END -->
-
-    <p>
-    </p>
-
-    <!-- EDUCATION -->
-    <h2 id="education" class="sectiontitle">Education</h2>
-    <ul class="ul1">
-
-      <li class="collapsible collapsed">
-        <div class="collapsible-header">
-          <h3>BEng Computer Systems And Networks</h3>
-          <span><i>Edinburgh Napier University, Sept '21 - July '23</i></span>
-        </div>
-        <div class="collapsible-content">
-          <ul class="ul2">
-            <li>Degree awarded with Distinction; awarded University Medal.</li>
-            <li>Networked Services: Linux filesystem, shell scripting, CentOS configuration, Apache2, firewall
-              configuration, security.</li>
-            <li>Practical Networks 3: OSI & TCP/IP, IPv4/IPv6, WAN technologies and network design.</li>
-            <li>Scripting for Cybersecurity and Networks: built <a
-                href="https://github.com/adam-gatherer/packetanalyser" target="_blank">Python packet analyser</a>,
-              modular Python programming, scripting for forensics & networking.</li>
-            <li>Work Based Learning: industry placement (Napier + NHS Lothian), professional and technical development.
-            </li>
-          </ul>
-        </div>
-      </li>
-
-      <p>
-      </p>
-
-      <li class="collapsible collapsed">
-        <div class="collapsible-header">
-          <h3>HND Computer Networking</h3>
-          <span><i>Edinburgh College, Aug '19 - July '21</i></span>
-        </div>
-        <div class="collapsible-content">
-          <ul class="ul2">
-            <li>Two-year diploma, awarded A grade.</li>
-            <li>Systems modules: <a href="https://www.gatherer.tech/projects/winservadmin/" target="_blank">Windows
-                Server</a>, Debian multi-user OS, Apache/MariaDB/WordPress/PHP, ESXi & VMware private cloud.</li>
-            <li>Networking modules: Switching, Routing & Wireless Essentials; Enterprise Networking, Security &
-              Automation.</li>
-            <li>Additional modules: Team Working, Project Management, Professionalism & Ethics in Computing.</li>
-          </ul>
-        </div>
-      </li>
-
-      <p>
-      </p>
-      <li>
-        <a href="#top" style="font-size:0.8rem"><i>^top</i></a>
-      </li>
-    </ul>
-    <!-- EDUCATION END -->
-
-    <p>
-    </p>
-
-    <!-- PDF DOWNLOADS -->
-    <h2 id="download" class="sectiontitle">PDF Download</h2>
-    <ul class="ul1" style="opacity:0.80">
-      <li>If you would like this page as a PDF you can download it using the link below.</li>
-      <p>
-      </p>
-      <li><a href="https://github.com/adam-gatherer/cloud-cv-aws/blob/master/pdfs/AdamGathererCV.pdf?raw=true"
-          target="_blank">AdamGathererCV.pdf</a></li>
-      <p>
-      </p>
-      <li>
-        <a href="#top" style="font-size:0.8rem"><i>^top</i></a>
-      </li>
-    </ul>
-    <!-- PDF DOWNLOADS END -->
-
-    <p>
-      <i>References available upon request</i>
-    </p>
+    <div class="identity" data-cv-core="identity">
+      <h3>Adam Gatherer</h3>
+      <p class="subtitle">Systems Engineer | Python Automation &amp; AWS Infrastructure</p>
+      <address class="contact-links"><p><a href="mailto:adam+jobs@gatherer.tech">adam+jobs@gatherer.tech</a> | <a href="tel:+447340344806">07340 344806</a></p>
+<p><a href="https://www.linkedin.com/in/adamgatherer">linkedin.com/in/adamgatherer</a> | <a href="https://github.com/adam-gatherer">github.com/adam-gatherer</a></p></address>
+    </div>
+    <div class="counter-number" role="status">Page views unavailable</div>
+    <noscript><p>The visitor counter requires JavaScript; the CV and expandable details work without it.</p></noscript>
+    <p><a class="download-link" href="pdfs/Adam_Gatherer_CV.pdf" download>Download CV (PDF)</a></p>
+    <nav aria-label="CV sections"><ul class="contentsList"><li><a href="#about">About</a></li><li><a href="#skills">Technical Skills</a></li><li><a href="#work">Work History</a></li><li><a href="#projects">Projects</a></li><li><a href="#earlier">Earlier experience</a></li><li><a href="#education">Education</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#download">Download CV</a></li></ul></nav>
+    <div class="detail-controls" hidden>
+      <button type="button" id="expand-all">Expand all details</button>
+      <span aria-hidden="true"> · </span>
+      <button type="button" id="collapse-all">Collapse all details</button>
+    </div>
+    <section id="about" aria-labelledby="about-title"><h2 id="about-title" class="sectiontitle">About</h2>
+<div class="ul1"><div data-cv-core="profile"><p>Systems and automation engineer with production experience in banking and healthcare. Develops Python tooling, delivers infrastructure changes and investigates dependencies across complex data-processing systems. Combines Linux and Windows Server operations with security remediation and controlled delivery. Builds AWS serverless applications with Python and Terraform through personal projects, including BirdAlert&#x27;s event-driven ingestion and query platform.</p></div><p class="back-to-top"><a href="#top" class="linktotop"><i>^top</i></a></p></div></section><section id="skills" aria-labelledby="skills-title"><h2 id="skills-title" class="sectiontitle">Technical Skills</h2>
+<div class="ul1"><div class="skills" data-cv-core="skills"><ul class="achievements ul2">
+<li><strong>Automation and development:</strong> Python, Bash, PowerShell, SQL/SQLite, pandas, Git.</li>
+<li><strong>Infrastructure and operations:</strong> Linux, Windows Server, VMware vSphere, Nagios, workload orchestration, migrations, incident investigation and change control.</li>
+<li><strong>Engineering delivery:</strong> Jenkins/CloudBees deployments, GitHub Enterprise, Snyk, code review, ServiceNow.</li>
+<li><strong>Cloud &amp; Infrastructure as Code (Projects):</strong> AWS serverless, Terraform, event-driven processing, DynamoDB, IAM, CloudWatch, Python unit tests and GitHub Actions.</li>
+</ul></div><p class="back-to-top"><a href="#top" class="linktotop"><i>^top</i></a></p></div></section><section id="work" aria-labelledby="work-title"><h2 id="work-title" class="sectiontitle">Work History</h2>
+<div class="ul1"><article id="barclays" class="entry">
+<div data-cv-core="barclays"><h3>Data Engineer - Orchestration</h3>
+<p><strong>Barclays PLC (formerly Tesco Bank) | Aug 2024 – Present</strong></p>
+<p>Support and improve an AutoSys estate of approximately 11,990 jobs and 2,702 workflow boxes across test, pre-production and production.</p>
+<ul class="achievements ul2">
+<li>Built <strong>Python/SQLite tooling</strong> to parse job definitions, trace dependencies and combine configuration with runtime data, producing repeatable reports for migration planning and decommissioning assessments.</li>
+<li>Implemented orchestration changes for a SAS infrastructure migration covering <strong>1,796 jobs and 535 boxes</strong>, including environment rollouts, shakedown testing, troubleshooting and cutover support.</li>
+<li>Reduced <strong>medium-risk Snyk findings from 62 to 11</strong> in orchestration tooling by addressing unsafe deserialisation, SQL injection and path traversal; improved maintainability through linting and formatting.</li>
+<li>Implemented and supported production data-processing workflows linking ETL, managed file transfer and SAS; investigated failures across scripts, file triggers and scheduling dependencies with partner teams.</li>
+<li>Delivered controlled removal of obsolete workloads across test, pre-production and production, using dependency checks, rollback definitions, approved deployments and post-change validation.</li>
+</ul></div>
+<details><summary>Additional experience and technical detail</summary>
+<div class="detail-body"><h4>Python tooling and dependency investigation</h4>
+<p>Parsed scheduler configuration into SQLite/JSON to query parent, child and downstream relationships. Combined configuration with status and runtime metadata, and refined migration scope using execution hosts rather than name matching alone. Used Python/pandas to prepare job-ownership metadata for ServiceNow knowledge articles.</p>
+<h4>Integration and controlled change</h4>
+<p>Traced business files through control files, ETL jobs and workflow definitions to reconcile documented processes with implemented schedules. Prepared update and rollback definitions, resolved deployment configuration issues and checked changes after deployment through Jenkins/CloudBees.</p>
+<h4>Production investigation and engineering practice</h4>
+<p>Investigated recurring housekeeping failures with engineering colleagues and Oracle DBAs, then changed the agreed schedule to avoid a database-backup window. Maintained file workflows and control files on Linux hosts, with Bash/cron automation. Improved team workspace and deployment scripts using PEP 8, pylint and Black; worked through code review, ServiceNow change control, Jira and Confluence.</p></div></details>
+</article><article id="nhs" class="entry">
+<div data-cv-core="nhs"><h3>Server Engineer</h3>
+<p><strong>NHS Lothian | Oct 2022 – Aug 2024</strong></p>
+<ul class="achievements ul2">
+<li>Delivered the annual server access review with security colleagues and the server team lead; investigated permissions, agreed access requirements with users and automated parts of the review using PowerShell and Python.</li>
+<li>Automated Nagios client installation with PowerShell to reduce manual server-build work; monitored storage and services and responded to capacity and availability issues.</li>
+<li>Deployed and administered VMware vSphere infrastructure and Windows Server systems, including SQL databases for third-party applications.</li>
+<li>Planned and carried out network-directory data migrations, managing permissions, storage requirements and expected growth; arranged controlled server access for software suppliers.</li>
+</ul></div>
+<details><summary>More on infrastructure, access management and support</summary>
+<div class="detail-body"><h4>Access and storage requirements</h4>
+<p>Worked with users to understand directory permissions, data types, storage capacity and expected growth. Investigated access requirements with security colleagues and the server team lead, and used scripting to support the review process.</p>
+<h4>Operational support</h4>
+<p>Supported Windows Server applications, virtual machines and SQL databases used by third-party software. Coordinated controlled supplier access and responded to Nagios storage and service alerts alongside routine administration.</p></div></details>
+</article><p class="back-to-top"><a href="#top" class="linktotop"><i>^top</i></a></p></div></section><section id="projects" aria-labelledby="projects-title"><span id="other" aria-hidden="true"></span><h2 id="projects-title" class="sectiontitle">Personal Projects</h2>
+<div class="ul1"><p class="section-intro">Personal engineering projects, separate from my commercial experience.</p><article id="birdalert" class="entry flagship">
+<div data-cv-core="birdalert"><h3>BirdAlert | Python, Terraform, AWS</h3>
+<p class="project-links"><strong>Live beta:</strong> <a href="https://birdalert.gatherer.tech">birdalert.gatherer.tech</a> | <strong>Source:</strong> <a href="https://github.com/adam-gatherer/BirdAlert/tree/agentic-development">GitHub — BirdAlert</a></p>
+<p>AWS serverless application for collecting, processing and querying UK wildlife sightings. Phase 1 implemented and validated in a development environment in October 2026.</p>
+<ul class="achievements ul2">
+<li>Implemented an ingestion pipeline in Python and Terraform: EventBridge schedules Lambda collection, S3 preserves raw eBird responses and a separate processor validates sightings for DynamoDB.</li>
+<li>Used stable sighting identities and conditional transactional writes to make repeated processing idempotent. Excluded private sightings and retained explicit validation status for provisional records.</li>
+<li>Built an indexed read API with region/species/date filters, cursor pagination and UK daylight-saving support; CloudFront serves the static client.</li>
+<li>Added scoped IAM, Parameter Store, bounded retries, SQS dead-letter queues and CloudWatch alarms. Development checks covered ingestion and processor failure handling; Python tests cover processing and the API.</li>
+</ul></div>
+<details><summary>Architecture, implementation and verification details</summary>
+<div class="detail-body"><h4>Event-driven architecture and infrastructure</h4>
+<p>A 15-minute EventBridge heartbeat invokes the collector. Unique object keys preserve upstream response bytes in a private S3 bucket; S3 events invoke the processor. Terraform defines the application infrastructure, function-specific IAM roles, log groups and retention. API Gateway exposes the read API, and CloudFront serves the static client from a separate site bucket using Origin Access Control.</p>
+<h4>Data modelling, validation and idempotency</h4>
+<p>Processing validates response shape, coordinates, timestamps, privacy and optional counts. Submission/species hashes identify a sighting independently of the collection region. Batch identity reads avoid unnecessary writes; conditional DynamoDB transactions protect concurrent creation and maintain query records. Compact indexed records support latest, region, species and combined queries, trading extra writes and eventual consistency for bounded reads.</p>
+<h4>API design</h4>
+<p>The API defaults to ten results and caps requests at fifty. Cursor pagination bounds responses; UK calendar dates convert to UTC query ranges with daylight-saving handling. Database connectivity and the freshness of successfully processed data are separate health signals.</p>
+<h4>Security, observability and failure handling</h4>
+<p>Function-specific roles separate raw writes, processing and API reads; Parameter Store supplies the upstream API token. Upstream transient retries and Lambda asynchronous retries address different failure points. SQS dead-letter queues support investigation and manual replay; CloudWatch alarms and SNS provide operational notifications. CORS is not authentication, and throttling is not a hard spending limit. Queue retention cannot recover raw objects after their shorter S3 expiry.</p>
+<h4>Testing and recorded deployment evidence</h4>
+<p>Repository acceptance records dated 15 October 2026 cover development-environment ingestion/freshness and an injected processor failure reaching its dead-letter queue and alarm path. Python tests exercise processing and API behaviour; Terraform validation passed in the career-record review. That review recorded 45 of 46 Python tests passing, with a stale homepage-link assertion failing, plus a Terraform formatting issue in production variables. This is recorded development verification, not evidence of production-scale operation or a fully passing current suite.</p>
+<h4>Development process and current scope</h4>
+<p>Developed with agent assistance, human review and approval of material decisions. Phase 1 is the implemented scope. Personalised user alerts, watchlists, the replacement frontend and its proposed separate CI/CD repository remain planned or ongoing. Further poller, event-delivery and stale-processing failure simulations are not recorded as completed. The public beta is available above; its existence does not establish production-grade reliability.</p></div></details>
+</article><article id="stormwatcher" class="entry">
+<div data-cv-core="stormwatcher"><h3>Stormwatcher | Python, Terraform, AWS</h3>
+<p><a href="https://github.com/adam-gatherer/stormwatcher">github.com/adam-gatherer/stormwatcher</a></p>
+<p>Built a weather-ingestion and risk-scoring pipeline: scheduled collection lands raw forecast data in S3, a second Lambda validates and transforms it, and DynamoDB stores the results. Implemented configurable SNS status and threshold notifications, with infrastructure defined in Terraform.</p></div>
+<details><summary>Pipeline decisions and project scope</summary>
+<div class="detail-body"><p>Separates collection from transformation, retaining the upstream JSON inside a metadata wrapper. Uses location/timestamp keys and converts Python floats to Decimal for DynamoDB. The risk score weights precipitation, wind, temperature and weather code as a learning exercise, rather than a validated forecasting model.</p>
+<p>The source implements the pipeline and optional SNS notifications. Dated live acceptance and an automated test suite were not established in the career-record review. A read API, frontend, CloudWatch alarms and DynamoDB Streams remain roadmap work.</p></div></details>
+</article><article id="jilestate" class="entry">
+<div data-cv-core="jilestate"><h3>JIL Estate Sync | AWS, Terraform</h3>
+<p>AWS event-driven proof of concept for moving generated scheduler JIL snapshots through S3, EventBridge and CodeBuild into GitHub pull requests, with Terraform-managed IAM. <a href="https://github.com/adam-gatherer/JIL_Estate_Sync" aria-label="JIL Estate Sync source code on GitHub">Source</a></p></div>
+<details><summary>Proof-of-concept workflow and boundaries</summary>
+<div class="detail-body"><p>An EC2 lab generates placeholder JIL, uploads it to versioned S3 and triggers CodeBuild through EventBridge. Bash compares the files, creates a branch and commit, and requests a GitHub pull request. Secrets Manager supplies the GitHub token; the script includes a no-change exit and optional reviewers.</p>
+<p>Generated data avoids requiring a live scheduler, while pull requests provide a review boundary. This is personal proof-of-concept work, not a Barclays deployment or a completed real AutoSys exporter. Automated tests and dated end-to-end acceptance were not established.</p></div></details>
+</article><article id="cloudcv" class="entry">
+<div data-cv-core="cloudcv"><h3>Cloud CV | AWS, GitHub Actions</h3>
+<p><a href="https://github.com/adam-gatherer/cloud-cv-aws">github.com/adam-gatherer/cloud-cv-aws</a></p>
+<p>Built a serverless CV website following the Cloud Resume Challenge, with S3/CloudFront hosting, a Python Lambda/DynamoDB visitor counter and a GitHub Actions workflow for site synchronisation and cache invalidation.</p></div>
+<details><summary>Hosting and deployment implementation</summary>
+<div class="detail-body"><p>Static HTML/CSS/JavaScript is delivered through S3 and CloudFront. A separate Python Lambda reads and updates the DynamoDB visitor count. GitHub Actions synchronises the site directory, then invokes CloudFront invalidation; deployment credentials are held in repository secrets.</p>
+<p>The repository also contains Terraform for infrastructure, DNS and certificates. These definitions are not presented as a verified complete migration of the running site. The original counter uses a read/increment/write sequence and is not concurrency-safe.</p></div></details>
+</article><article id="terraformlb" class="entry">
+<div data-cv-core="terraformlb"><h3>Terraform Load Balancer | AWS, Terraform</h3>
+<p>Tutorial-derived IaC project provisioning a VPC, subnets, NAT gateway, application load balancer and Auto Scaling Group. <a href="https://github.com/adam-gatherer/terraform-load-balancer" aria-label="Terraform Load Balancer source code on GitHub">Source</a></p></div>
+<details><summary>Infrastructure components and learning scope</summary>
+<div class="detail-body"><p>Terraform defines route tables, internet/NAT gateways, a target group and launch template alongside the VPC and load balancer. Bash user data installs Apache; instance ingress is restricted to the load balancer security group. Adapted from the tutorial credited in the repository.</p>
+<p>The inspected configuration fixes Auto Scaling Group capacity at one instance in a single private subnet. It demonstrates provisioning and network configuration, rather than measured elastic scaling, high availability or load-tested performance.</p></div></details>
+</article><details><summary>Additional Projects — earlier and academic work</summary>
+<div class="detail-body"><h3>PySched — Python/SQLite prototype</h3>
+<p>Explored CLI-based job-definition tooling with argparse, YAML validation and parameterised SQLite CRUD. An incomplete prototype without an implemented execution loop or completed scheduler. <a href="https://github.com/adam-gatherer/PySched">GitHub — PySched</a></p>
+<h3>Packet analyser — academic Python project</h3>
+<p>Networking/security coursework using dpkt, GeoIP2, PrettyTable and simplekml for packet summaries, address-pair counts, HTTP image references and KML output. Incomplete coursework, with stronger error handling and time-series work left unfinished. <a href="https://github.com/adam-gatherer/packetanalyser">GitHub — packet analyser</a></p>
+<h3>Tempercent — Flask/API exercise</h3>
+<p>Built postcode validation and weather-API calls with Flask and Poetry to explore local temperatures against historical weather. An early learning project with known calculation/display limitations; no current deployment is claimed. <a href="https://github.com/adam-gatherer/tempercent">GitHub — Tempercent</a></p>
+<h3>URL Shortener — tutorial exercise</h3>
+<p>Worked through a Real Python tutorial using FastAPI, Uvicorn, SQLAlchemy and SQLite, separating routes, schemas, CRUD and key generation. The inspected revision is incomplete; a fully working service or planned UI is not claimed. <a href="https://github.com/adam-gatherer/urlshortener">GitHub — URL Shortener</a></p>
+<h3>Earlier self-hosting</h3>
+<p>Hosted a band website with WordPress, Debian, Apache, VMware ESXi and pfSense. Earlier Gatherer.tech hosting involved a Debian VPS, Nginx, Bash/cron, DNS/Cloudflare, permissions and mail-server setup. These are historical personal infrastructure activities.</p></div></details><p class="back-to-top"><a href="#top" class="linktotop"><i>^top</i></a></p></div></section><section id="earlier" aria-labelledby="earlier-title"><h2 id="earlier-title" class="sectiontitle">Earlier experience</h2>
+<div class="ul1"><article id="napier" class="entry">
+<div data-cv-core="napier"><h3>Systems &amp; Infrastructure Technician</h3>
+<p><strong>Edinburgh Napier University | Jun 2021 – Oct 2022</strong></p>
+<ul class="achievements ul2">
+<li>Packaged and troubleshot VMware/Cloudpaging applications, scripted software installation with PowerShell, Bash and Python, and supported lab upgrades with student volunteers.</li>
+</ul></div>
+<details><summary>Additional university infrastructure experience</summary>
+<div class="detail-body"><p>Investigated virtualisation and application-packaging issues where official documentation was limited. Supported hardware configuration, classroom infrastructure and staff across technical and non-technical schools. Lab upgrades were delivered around the academic-year timetable; the role overlapped my studies.</p></div></details>
+</article><article id="centrica" class="entry">
+<div data-cv-core="centrica"><h3>Customer Service Advisor</h3>
+<p><strong>Centrica | Jan 2018 – Aug 2019</strong></p>
+<p>Customer service and gas/electrical emergency-line operations; automated routine tasks with Windows Task Scheduler.</p></div>
+<details><summary>Additional customer operations experience</summary>
+<div class="detail-body"><p>Analysed account and payment records, wrote ticket and complaint reports, explained outcomes to customers and de-escalated complaints. Work included smart-metering support and responding to gas/electrical emergency calls.</p></div></details>
+</article><p class="back-to-top"><a href="#top" class="linktotop"><i>^top</i></a></p></div></section><section id="education" aria-labelledby="education-title"><h2 id="education-title" class="sectiontitle">Education</h2>
+<div class="ul1"><div data-cv-core="education"><h3>BEng Computer Systems and Networks</h3>
+<p><strong>Edinburgh Napier University | Sep 2021 – Jul 2023</strong></p>
+<p><strong>Graduated with Distinction · Awarded the Edinburgh Napier University Medal</strong></p>
+<p>Study included Python, Linux systems, network architecture, virtualisation and security.</p>
+<h3>HND Computer Networking — A grade</h3>
+<p>Edinburgh College | Aug 2019 – Jul 2021</p></div><details><summary>Relevant coursework and academic projects</summary>
+<div class="detail-body"><h4>BEng coursework</h4>
+<p>Linux account administration and shell scripting; Apache and server security; IP addressing, routing and network design; Python for cybersecurity and networks. Academic packet-analysis work is linked in Additional Projects.</p>
+<h4>HND coursework</h4>
+<p>Windows Server 2019, Debian multi-user systems, Apache/MariaDB/PHP, VMware/ESXi private-cloud virtualisation, switching and routing, and project/team practice.</p></div></details><p class="back-to-top"><a href="#top" class="linktotop"><i>^top</i></a></p></div></section><section id="certifications" aria-labelledby="certifications-title"><h2 id="certifications-title" class="sectiontitle">Certifications</h2>
+<div class="ul1"><div data-cv-core="certifications"><p>Microsoft Certified: Azure Fundamentals; Microsoft Certified: Security, Compliance, and Identity Fundamentals; Microsoft 365 Certified: Fundamentals.</p></div><p class="back-to-top"><a href="#top" class="linktotop"><i>^top</i></a></p></div></section><section id="download" aria-labelledby="download-title"><h2 id="download-title" class="sectiontitle">PDF Download</h2>
+<div class="ul1"><p>The current two-page employer CV.</p><a class="download-link" href="pdfs/Adam_Gatherer_CV.pdf" download>Download CV (PDF)</a><p class="back-to-top"><a href="#top" class="linktotop"><i>^top</i></a></p></div></section>
+    <footer><p>This site is hosted with AWS as part of the <a href="https://github.com/adam-gatherer/cloud-cv-aws">Cloud Resume Challenge</a>.</p></footer>
   </main>
-  <script src="./index.js"></script>
 </body>
-
 </html>

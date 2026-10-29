@@ -1,0 +1,71 @@
+/* Content/disclosure additions to the original design in style.css.
+   Keep its palette, terminal heading, typefaces and portrait artwork. */
+:root {
+  color-scheme: dark;
+  --panel: var(--bg);
+  --muted: #b5bfd0;
+  --border: #617083;
+}
+
+* { box-sizing: border-box; }
+body { height: auto; min-height: calc(100vh - 3rem); }
+h1, h2, h3 { overflow-wrap: anywhere; }
+h1, h2, h3, h4 { font-family: 'Victor Mono', monospace; }
+main { max-width: 60rem; }
+section { margin-top: 2.5rem; }
+section > h2 { margin-bottom: 0.7rem; }
+section .ul1 p { max-width: none; margin: 0.9rem 0; }
+.identity .subtitle { margin: 0.25rem 0 1rem; max-width: none; }
+.contact-links { font-style: normal; }
+.contact-links p { margin: 0.2rem 0; }
+.contentsList { margin: 1.5rem 0; }
+.contentsList a { display: inline-block; padding: 0.15rem 0; }
+.entry + .entry { margin-top: 2rem; }
+.entry h3 { margin-bottom: 0.2rem; }
+.entry [data-cv-core] > h3 + p > strong { font-style: italic; font-weight: 400; }
+.achievements li { margin: 0.55rem 0; }
+.skills strong { font-weight: 700; }
+.skills .ul2 { opacity: 1; }
+.entry .project-links { margin: 0.5rem 0 1rem; }
+.entry [data-cv-core] > h3 + .project-links > strong { font-style: normal; font-weight: 700; }
+.back-to-top { font-size: 0.8rem; }
+.detail-controls { margin: 1rem 0 1.5rem; font-size: 0.85rem; }
+.detail-controls button { background: none; border: 0; padding: 0.3rem 0; color: var(--comment); font: inherit; text-decoration: underline; text-underline-offset: 0.2em; cursor: pointer; }
+.detail-controls button:hover { color: var(--link); }
+details { margin: 1rem 0; }
+summary { width: fit-content; max-width: 100%; color: var(--comment); cursor: pointer; padding: 0.4rem 0; font-size: 0.9rem; line-height: 1.75; }
+summary::marker { color: var(--primary); }
+summary:hover { color: var(--link); }
+.detail-body { margin: 0.6rem 0 1rem 0.4rem; padding-left: 1rem; border-left: 1px solid var(--border); }
+.detail-body h3, .detail-body h4 { font-size: 1rem; margin-top: 1.5rem; }
+.detail-body > :first-child { margin-top: 0; }
+.detail-body p { font-size: 0.95rem; }
+#education [data-cv-core] > h3:not(:first-child) { margin-top: 1.6rem; }
+footer { font-size: 0.8rem; margin: 2rem 0 1rem; }
+[hidden] { display: none !important; }
+a { overflow-wrap: anywhere; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
+.skip-link { position: absolute; left: 1rem; top: 0.25rem; transform: translateY(-200%); background: var(--bg); padding: 0.4rem; }
+.skip-link:focus { transform: none; }
+
+@media (max-width: 700px) {
+  body { padding: 1rem; }
+  main { padding: 0; }
+  header h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; line-height: 1.5; }
+  h3 { font-size: 1.1rem; line-height: 1.6; }
+  .ul1 { margin-left: 0.5rem; }
+  .ul2 { margin-left: 1rem; }
+  .contact-links { font-size: 0.85rem; }
+  .identity .subtitle { font-size: 1rem; line-height: 1.65; }
+}
+
+@media print {
+  html { background: white; }
+  body { color: black; padding: 0; font-size: 10pt; }
+  main { max-width: none; padding: 0; }
+  a, .sectiontitle { color: black; }
+  nav, .detail-controls, .counter-number, .skip-link, .back-to-top, footer { display: none; }
+  details { display: none; }
+  h2, h3 { break-after: avoid; }
+}

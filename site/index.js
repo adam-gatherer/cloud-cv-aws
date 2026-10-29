@@ -1,24 +1,32 @@
-// JavaScript Code to Use Lambda Function
+'use strict';
 
-const counter = document.querySelector(".counter-number"); //select the element from index.html
-async function updateCounter() { //function that does a fetch request
-  let response = await fetch("https://bujk7hizyolll7qscxgtjcodpy0qzhzx.lambda-url.eu-west-1.on.aws/");
-  let data = await response.json(); //stores response as variable called "data"
-  counter.innerHTML = `Page views: ${data}`; //updates counter in HTML file to use data variable
+// Preserve the existing Cloud Resume Challenge counter and Lambda endpoint.
+const counter = document.querySelector('.counter-number');
+async function updateCounter() {
+  if (!counter) return;
+  try {
+    const response = await fetch(
+      'https://bujk7hizyolll7qscxgtjcodpy0qzhzx.lambda-url.eu-west-1.on.aws/',
+      { signal: AbortSignal.timeout(8000) }
+    );
+    if (!response.ok) throw new Error('Counter request failed');
+    const data = await response.json();
+    const count = typeof data === 'number' ? data : (/^\d+$/.test(data) ? Number(data) : NaN);
+    if (!Number.isSafeInteger(count) || count < 0) throw new Error('Invalid count');
+    counter.textContent = `Page views: ${count.toLocaleString('en-GB')}`;
+  } catch {
+    counter.textContent = 'Page views unavailable';
+  }
 }
-
-function initCollapsibles() {
-  const sections = document.querySelectorAll(".collapsible");
-
-  sections.forEach((section) => {
-    const header = section.querySelector(".collapsible-header");
-    if (!header) return;
-
-    header.addEventListener("click", () => {
-      section.classList.toggle("collapsed");
-    });
-  });
-}
-
 updateCounter();
-initCollapsibles();
+
+// Core CV content is always visible. These controls affect only native details.
+const controls = document.querySelector('.detail-controls');
+if (controls) {
+  controls.hidden = false;
+  for (const [id, open] of [['expand-all', true], ['collapse-all', false]]) {
+    document.getElementById(id).addEventListener('click', () => {
+      document.querySelectorAll('main details').forEach(detail => { detail.open = open; });
+    });
+  }
+}
